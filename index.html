@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NextUp Initiative</title>
+        <style>
+            body {
+                background-color: rgb(255, 255, 255);
+                margin: 0;
+                padding: 0;
+                position: relative;
+            }
+            body::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 185vh;
+                width: 100vw;
+                background: linear-gradient(45deg, #fbc2eb, #a6c1ee);
+                clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+                z-index: -1;
+            }
+
+            p.header {
+                font-size: 200px;
+                margin-left: 50px;
+                margin-right: 1200px;
+                margin-top: -12px;
+                line-height: 180px;
+                margin-bottom: 20px;
+                font-family:'Helvetica', sans-serif;
+                font-weight:bold;
+            }
+            p.slogan {
+                margin-left: 65px;
+                margin-right: 190px;
+                margin-top: -413px;
+            }
+            .line {
+                width: 8px;
+                height: 415px;
+                background-color: black;
+                margin-left: 40px;
+                margin-top: 30px;
+            }
+            .upcoming {
+                display: flex;
+                justify-content: flex-end;
+                gap: 20px; /* space between the two paragraphs */
+                background-color: #ffffff;
+                padding: 15px 30px;
+                border-radius: 12px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                width: fit-content; 
+                margin-left: auto; 
+                margin-right: 20px; 
+            }
+
+            .upcoming p {
+                font-family: Verdana, sans-serif;
+                margin-top: 10px;
+                text-align: center;
+            }
+            img {
+                width: 800px;
+                border-radius: 20px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+            }
+            p.intro {
+                margin-left: 20px;
+                text-align: justify;
+                flex: 1;
+                width: 35%;
+                font-family: Verdana, Geneva, sans-serif; 
+                font-size: 14px;
+                margin-top: 50px;
+            }
+            p.explanation {
+                text-align: justify;
+                flex: 1;
+                width: 35%;
+                margin: 20;
+                margin-right: 20px;  
+                font-family: Verdana, Geneva, sans-serif;
+                font-size: 14px;
+                margin-top: 50px;
+            }
+            .introduction {
+                display:flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                width: 100%;
+                flex-wrap: wrap; /* optional: allows wrapping on small screens */
+                gap:40px; /* optional: space between paragraphs */
+                padding: 0 30px;
+                box-sizing: border-box;
+                margin-bottom: 50px;
+            }
+            .navbar {
+                position: sticky;
+                top: 0;
+                background-color: #31163a;
+                padding: 10px 0;
+                display: flex;
+                justify-content: center;
+                gap: 30px;
+                z-index: 1000;
+            }
+
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                font-family: Verdana, sans-serif;
+                padding: 10px 20px;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+            .navbar a:hover {
+                background-color: #575757;
+            }
+            p.about-header {
+                font-size: 30px;
+                margin-left: 20px;
+                margin-top: 50px;
+                font-family: 'Helvetica', sans-serif;
+                font-weight:bold;
+            }
+            .white-rect {
+                width: 100%;
+                height: 55px;
+                background-color: rgb(255, 255, 255);
+                margin-top: -75px;
+
+            }
+            .contact {
+                font-family: Verdana, Geneva, sans-serif;
+                font-size: 15px;
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                line-height: 20px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="index.html" class="about-button">About</a>
+            <a href="founders.html" class="founder-button">Founders</a> 
+            <a href="competitiondates.html" class="date-button">Competition Dates</a>
+            <a href="registration.html" class="reg-button">Hackathon Registration</a>
+            <a href="class.html" class="classes-button">Coding Classes</a>
+            <a href="donate.html" class="founder-button">Donate!</a>
+        </div>
+        
+        <div class="line"></div>
+        <div class="title_page">
+            <p class="slogan">Hack the future.</p>
+            <p class="header">Next Up</p>
+        </div>
+        <div class="upcoming">
+            <p class="upcoming_hacks">
+                <b><span style="color:darkblue;">Next Hackathon:</span></b><br>
+                May 11, 2025<br>
+                8:00 AM to 11:59 PM PST<br>
+                <b><span style="color:darkblue;">Registration Due:</span></b><br>
+                May 10, 2025<br>
+                @ 11:59 PM
+            </p>
+            <p class="upcoming_marathons">
+            <b><span style="color:darkblue;">Next Hackathon Marathon:</span></b><br>
+            May 4, 2025<br>
+            10:00 AM to 10:00 PM PST<br>
+            <b><span style="color:darkblue;">Registration Due:</span></b><br>
+            May 5, 2025<br>
+            @ 11:59 PM 
+            </p>
+            <div class="upcoming_box"></div>
+        </div>
+        
+        <p class="about-header">About</p>
+        <div class="white-rect"></div>
+        <div class="introduction">
+            <p class="intro">We are a nonprofit student-led organization with the goal of providing free hackathons for youth looking to expand their experience and knowledge of coding. NextUp holds hackathons in the programming language, python, for students from <b>1st to 10th grade.</b> We also hold a hackathon marathon for more advanced coders. Click the Hackathon Registration tab above to learn about out hackathons and hackathon marathons!</p>
+            <p class="explanation">Students can register for 3 different hackathon difficulty levels: beginner, intermediate, and challenging. Register yourself or your child for a hackathon today by clicking registration at the top right of you screen, <b>free of charge!</b> Hackathon marathons have a registration fee of $5</p>
+
+        </div>
+        
+        <img src="images/NextUp_website_photo (1 of 1).jpg" alt="image of student coding">
+        <div class ="contact-us">
+            <p class ="contact">
+                <b>QUESTIONS? CONCERNS?</b> <br>
+                Contact us at <a href="mailto:nextupinitiative@gmail.com" class="email">nextupinitiative@gmail.com</a>
+            </p>
+
+        </div>
+    </body>
+</html>
