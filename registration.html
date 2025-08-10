@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Registration | NextUp Initiative</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6a11cb;
+            --secondary: #2575fc;
+            --light-bg: linear-gradient(135deg, #6a11cb, #2575fc);
+            --text-dark: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: var(--light-bg); /* <- changed this line only */
+            color: var(--text-dark);
+        }
+
+        /* Navbar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: #1d063c;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 12px 0;
+            z-index: 100;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 14px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Section styles */
+        section {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        h1 {
+            color: white
+        }
+        h2, h3 {
+            color: var(--primary);
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin: 10px 0 20px 20px;
+            line-height: 1.6;
+        }
+
+        a.button {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        a.button:hover {
+            background: var(--secondary);
+        }
+
+        /* Card style */
+        .info-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 25px;
+            margin-bottom: 30px;
+        }
+                /* Contact */
+        .contact {
+            text-align: center;
+            padding: 30px;
+            font-size: 1rem;
+            color: white;
+        }
+
+        .contact a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html">About</a>
+        <a href="founders.html">Founders</a>
+        <a href="competitiondates.html">Competition Dates</a>
+        <a href="registration.html">Hackathon Registration</a>
+        <a href="class.html">Coding Classes</a>
+        <a href="donate.html">Donate!</a>
+    </div>
+
+    <!-- Hackathon Info -->
+    <section>
+        <h1>Hackathon Registration</h1>
+        
+        <div class="info-card">
+            <h2>How do our hackathons work?</h2>
+            <p>Each competition lasts one day. Hackers will write a Python program in response to the prompt given to them. Each competition level receives a different prompt. After the day ends, submissions are judged anonymously and fairly. Winners are announced after one week.</p>
+            
+            <h3>Prizes</h3>
+            <ul>
+                <li><b>Beginner Level:</b> Official NextUp Certificate</li>
+                <li><b>Intermediate Level:</b> Official NextUp Certificate</li>
+                <li><b>Challenging Level:</b> Official NextUp Certificate</li>
+            </ul>
+
+            <p><b>100% Free!</b></p>
+            <p><a class="button" href="https://tinyurl.com/nextuphackathon" target="_blank">Register for the Hackathon</a></p>
+        </div>
+
+        <!-- Marathon Info -->
+        <div class="info-card">
+            <h2>What are our Hackathon Marathons?</h2>
+            <p>Hackathon Marathons are designed for advanced coders, but all students in grades 1–10 may participate. Competitors write multiple programs throughout the competition. Each new prompt is unlocked by submitting the previous one. Prompts get progressively harder and are worth more points. You may not resubmit any prompts.</p>
+            
+            <p><b>Registration Fee:</b> $5 per competitor (All fees are donated!)</p>
+
+            <h3>Prizes</h3>
+            <ul>
+                <li><b>1st Place:</b> Amazon Gift Card + Official NextUp Certificate</li>
+                <li><b>2nd Place:</b> Official NextUp Certificate</li>
+                <li><b>3rd Place:</b> Official NextUp Certificate</li>
+                <li>All competitors receive a participation certificate</li>
+            </ul>
+
+            <h3>Scoring System</h3>
+            <ul>
+                <li>10 coding prompts</li>
+                <li>Scoring based on a rubric with partial credit</li>
+                <li>Prompt 1: 5 points</li>
+                <li>Prompt 2: 7 points</li>
+                <li>Prompt 3: 9 points</li>
+                <li>Prompt 4: 11 points</li>
+                <li>Prompt 5: 13 points</li>
+                <li>Prompt 6: 15 points</li>
+                <li>Prompt 7: 17 points</li>
+                <li>Prompt 8: 19 points</li>
+                <li>Prompt 9: 21 points</li>
+                <li>Prompt 10: 23 points</li>
+            </ul>
+
+            <p>Scoring reports will be offered to each student after the competition.</p>
+            <p><a class="button" href="https://tinyurl.com/NextUpHackMarathon" target="_blank">Register for the Hackathon Marathon</a></p>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class="contact">
+        <p><b>Questions or Concerns?</b> Contact us at <a href="mailto:nextupinitiative@gmail.com">nextupinitiative@gmail.com</a></p>
+    </section>
+</body>
+</html>

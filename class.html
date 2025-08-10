@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coding Classes | NextUp Initiative</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --primary: #6a11cb;
+            --secondary: #2575fc;
+            --light-bg: linear-gradient(135deg, #6a11cb, #2575fc);
+            --text-dark: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: #1d063c;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 12px 0;
+            z-index: 100;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 14px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Main Section */
+        main {
+            max-width: 900px;
+            margin: 40px auto 60px;
+            background: white;
+            border-radius: 12px;
+            padding: 40px 30px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary);
+            font-size: 2.8rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary);
+            margin-bottom: 20px;
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 6px;
+        }
+
+        h3 {
+            margin-top: 30px;
+            color: var(--secondary);
+        }
+
+        p, ul {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        a.button {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background 0.3s;
+            margin-top: 20px;
+        }
+
+        a.button:hover {
+            background: var(--secondary);
+        }
+
+        /* Instructors */
+        .instructors {
+            display: flex;
+            gap: 40px;
+            margin-top: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .instructor-card {
+            background: #f4f4f4;
+            border-radius: 12px;
+            padding: 20px;
+            width: 220px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .instructor-name {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 6px;
+        }
+
+        .instructor-title {
+            font-size: 0.9rem;
+            color: var(--secondary);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            main {
+                margin: 20px 15px 40px;
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            .instructors {
+                flex-direction: column;
+                align-items: center;
+                gap: 25px;
+            }
+
+            .instructor-card {
+                width: 90%;
+            }
+        }
+        /* Contact */
+        .contact {
+            text-align: center;
+            padding: 30px;
+            font-size: 1rem;
+            color: white;
+        }
+
+        .contact a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html">About</a>
+        <a href="founders.html">Founders</a>
+        <a href="competitiondates.html">Competition Dates</a>
+        <a href="registration.html">Hackathon Registration</a>
+        <a href="class.html">Coding Classes</a>
+        <a href="donate.html">Donate!</a>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        <h1>Coding Courses</h1>
+
+        <section>
+            <h2>Available Courses</h2>
+
+            <h3>Intro to Python</h3>
+            <p>
+                A 6-week online Python programming workshop. This beginner-friendly course introduces the fundamentals of Python programming over six sessions.
+                Students will learn essential concepts such as variables, data types, loops, conditionals, and functions, ensuring a strong foundation in Python.
+                By the end of this course, students will be able to write basic scripts and develop simple programs, preparing them for further exploration in programming and data science.
+            </p>
+            <h4>Course Dates</h4>
+            <p>Every Wednesday starting from 10/23 - 12/4 (Excluding Thanksgiving Week 11/27)</p>
+
+            <h3>Intro to Website Development</h3>
+            <p>
+                A 6-week online Website Development programming workshop. This course introduces students to the basics of web design using HTML, CSS, and JavaScript.
+                Students will learn how to create structured web pages with HTML, style them using CSS, and add interactive elements with JavaScript.
+                By the end of this course, participants will have a solid foundation in web design and be able to create visually appealing, functional web pages, as well as their own finished website.
+            </p>
+            <h4>Course Dates</h4>
+            <p>Every Tuesday starting from 10/22 - 12/3 (Excluding Thanksgiving Week 11/26)</p>
+        </section>
+
+        <section>
+            <h2>Why Register?</h2>
+            <ul>
+                <li>No prior coding experience needed</li>
+                <li>Open to all ages</li>
+                <li>100% proceeds donated</li>
+                <li>Online & remote</li>
+                <li>Beginner-friendly</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Payment Information</h2>
+            <p>All payments go directly to our donation page.</p>
+            <p>One-time payment of $60 for each course you select (6 classes - $10 each class)</p>
+            <p>Payments are non-refundable.</p>
+            <p>The payment link can be found in the registration form below.</p>
+        </section>
+
+        <section>
+            <h2>Instructors</h2>
+            <div class="instructors">
+                <div class="instructor-card">
+                    <p class="instructor-name">Riya Patel</p>
+                    <p class="instructor-title">NextUp Founder</p>
+                </div>
+                <div class="instructor-card">
+                    <p class="instructor-name">Shruti Nath</p>
+                    <p class="instructor-title">NextUp Founder</p>
+                </div>
+            </div>
+        </section>
+
+        <section style="text-align: center;">
+            <a class="button" href="https://forms.gle/Fo4mETeEcU2Krtbc8" target="_blank" rel="noopener noreferrer">REGISTER TODAY!</a>
+        </section>
+    </main>
+    <!-- Contact -->
+    <section class="contact">
+        <p><b>Questions or Concerns?</b> Contact us at <a href="mailto:nextupinitiative@gmail.com">nextupinitiative@gmail.com</a></p>
+    </section>
+
+</body>
+</html>

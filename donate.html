@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Donate | NextUp Initiative</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --primary: #6a11cb;
+            --secondary: #2575fc;
+            --light-bg: linear-gradient(135deg, #6a11cb, #2575fc);
+            --text-dark: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: #1d063c;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 12px 0;
+            z-index: 100;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 14px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Main container */
+        main {
+            max-width: 900px;
+            margin: 50px auto 60px;
+            background: white;
+            border-radius: 12px;
+            padding: 40px 30px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary);
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary);
+            margin-bottom: 20px;
+            border-bottom: 3px solid var(--secondary);
+            padding-bottom: 6px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+        }
+
+        a.button {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: background 0.3s;
+        }
+
+        a.button:hover {
+            background: var(--secondary);
+        }
+
+        @media (max-width: 600px) {
+            main {
+                margin: 30px 15px 40px;
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+        /* Contact */
+        .contact {
+            text-align: center;
+            padding: 30px;
+            font-size: 1rem;
+            color: white;
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html">About</a>
+        <a href="founders.html">Founders</a>
+        <a href="competitiondates.html">Competition Dates</a>
+        <a href="registration.html">Hackathon Registration</a>
+        <a href="class.html">Coding Classes</a>
+        <a href="donate.html">Donate!</a>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        <h1>Donate</h1>
+
+        <section>
+            <h2>Why Donate?</h2>
+            <p>Your donations are directly used to help expand our organization. We hope to use these funds to reach out to more children, especially those in low-income areas. Additionally, a portion of the donations are used to help provide digital access for all students living in the Bay Area.</p>
+        </section>
+
+        <section>
+            <h2>Donate Today!</h2>
+            <a class="button" href="https://hcb.hackclub.com/donations/start/nextup" target="_blank" rel="noopener noreferrer">Click Here to Donate</a>
+        </section>
+    </main>
+    <!-- Contact -->
+    <section class="contact">
+         <p><b>Questions or Concerns?</b> Contact us at <a href="mailto:nextupinitiative@gmail.com">nextupinitiative@gmail.com</a></p>
+    </section>
+
+</body>
+</html>

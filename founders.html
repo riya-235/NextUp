@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Founders | NextUp Initiative</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --primary: #6a11cb;
+            --secondary: #2575fc;
+            --light-text: #281377;
+            --icon-color: #6a11cb;
+            --icon-hover-color: #2575fc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--light-text);
+        }
+
+        /* Navbar */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: #1d063c;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 12px 0;
+            z-index: 100;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 14px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Section */
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        /* Founder Cards */
+        .founders {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .founder-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .founder-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .founder-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .founder-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: var(--primary);
+        }
+
+        .founder-role {
+            font-weight: bold;
+            color: var(--secondary);
+            margin-bottom: 15px;
+        }
+
+        .founder-description {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        /* Social Icons */
+        .social-icons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-icons a {
+            color: var(--icon-color);
+            transition: color 0.3s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: var(--icon-hover-color);
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+            padding: 30px;
+            font-size: 1rem;
+            color: white;
+        }
+
+        .contact a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html">About</a>
+        <a href="founders.html">Founders</a>
+        <a href="competitiondates.html">Competition Dates</a>
+        <a href="registration.html">Hackathon Registration</a>
+        <a href="class.html">Coding Classes</a>
+        <a href="donate.html">Donate!</a>
+    </div>
+
+    <!-- Founders Section -->
+    <section>
+        <h1>Our Team</h1>
+
+        <div class="founders">
+            <!-- Shruti -->
+            <div class="founder-card">
+                <img src="images/founder_one.png" alt="Portrait of Shruti Nath" />
+                <div class="founder-content">
+                    <div>
+                        <div class="founder-name">Shruti Nath</div>
+                        <div class="founder-role">CO-FOUNDER</div>
+                        <p class="founder-description">
+                            My interest in coding began in 2020 when my sister introduced me to Python. Over the years, I broadened my interest by taking in-depth courses on Coursera, coding programs, and hackathons. 
+                            A major step in my progress was the experience I gained during hackathons. The competitive environment paired with applying coding in real-world situations helped my creativity, inside and outside of programming. 
+                            Aside from coding, my hobbies also include taekwondo and art.
+                        </p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="http://wa.me/6505500390" title="WhatsApp" target="_blank" rel="noopener noreferrer" aria-label="Shruti's WhatsApp">
+                            <!-- WhatsApp SVG icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M20.52 3.48A11.936 11.936 0 0012 0C5.373 0 0 5.373 0 12a11.937 11.937 0 002.093 6.193L0 24l5.947-2.089A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12a11.94 11.94 0 00-3.48-8.52zm-8.52 17.02a8.88 8.88 0 01-4.57-1.34l-.33-.2-3.14 1.1 1.08-3.07-.22-.33a8.886 8.886 0 0114.51-10.5 8.832 8.832 0 01-6.21 14.3zm5.12-6.72c-.26-.13-1.53-.76-1.76-.84-.23-.09-.4-.13-.57.13s-.66.84-.8 1.01c-.15.17-.3.2-.56.07-.26-.13-1.1-.41-2.09-1.28-.77-.68-1.29-1.51-1.44-1.77-.15-.26-.02-.4.11-.53.11-.11.26-.28.39-.42.13-.13.17-.23.26-.38.09-.15.04-.28-.02-.41-.06-.13-.57-1.38-.78-1.9-.2-.49-.4-.43-.56-.44-.15-.01-.32-.01-.49-.01-.17 0-.44.06-.67.28s-.88.86-.88 2.09.9 2.43 1.03 2.6c.13.17 1.79 2.74 4.34 3.84.61.26 1.09.41 1.46.53.61.2 1.17.17 1.61.1.49-.07 1.53-.62 1.75-1.21.22-.59.22-1.1.15-1.21-.07-.12-.25-.19-.51-.32z"/></svg>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100084664967518" title="Facebook" target="_blank" rel="noopener noreferrer" aria-label="Shruti's Facebook">
+                            <!-- Facebook SVG icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M22.675 0h-21.35C.593 0 0 .593 0 1.325v21.351C0 23.406.593 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.31h3.59l-.467 3.622h-3.123V24h6.116C23.406 24 24 23.406 24 22.676V1.325C24 .593 23.406 0 22.675 0z"/></svg>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=shrutiweibel@gmail.com" title="Email" aria-label="Email Shruti Nath">
+                            <!-- Email SVG icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.511l-8 5.01-8-5.01V6h16zm0 12H4v-9.839l8 5.011 8-5.011V18z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Riya -->
+            <div class="founder-card">
+                <img src="images/founder_two.png" alt="Portrait of Riya Patel" />
+                <div class="founder-content">
+                    <div>
+                        <div class="founder-name">Riya Patel</div>
+                        <div class="founder-role">CO-FOUNDER</div>
+                        <p class="founder-description">
+                            I have been coding since middle school, which is when my interest in computer science first began. I started with Python, and have since learned Java as well. 
+                            My passion for computer science was fueled by participating in hackathons. I enjoyed the challenges they presented and now want to provide other students with similar opportunities. 
+                            Besides coding, I also enjoy playing soccer and painting.
+                        </p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="http://wa.link/q2hwn9" title="WhatsApp" target="_blank" rel="noopener noreferrer" aria-label="Riya's WhatsApp">
+                            <!-- WhatsApp SVG icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M20.52 3.48A11.936 11.936 0 0012 0C5.373 0 0 5.373 0 12a11.937 11.937 0 002.093 6.193L0 24l5.947-2.089A11.94 11.94 0 0012 24c6.627 0 12-5.373 12-12a11.94 11.94 0 00-3.48-8.52zm-8.52 17.02a8.88 8.88 0 01-4.57-1.34l-.33-.2-3.14 1.1 1.08-3.07-.22-.33a8.886 8.886 0 0114.51-10.5 8.832 8.832 0 01-6.21 14.3zm5.12-6.72c-.26-.13-1.53-.76-1.76-.84-.23-.09-.4-.13-.57.13s-.66.84-.8 1.01c-.15.17-.3.2-.56.07-.26-.13-1.1-.41-2.09-1.28-.77-.68-1.29-1.51-1.44-1.77-.15-.26-.02-.4.11-.53.11-.11.26-.28.39-.42.13-.13.17-.23.26-.38.09-.15.04-.28-.02-.41-.06-.13-.57-1.38-.78-1.9-.2-.49-.4-.43-.56-.44-.15-.01-.32-.01-.49-.01-.17 0-.44.06-.67.28s-.88.86-.88 2.09.9 2.43 1.03 2.6c.13.17 1.79 2.74 4.34 3.84.61.26 1.09.41 1.46.53.61.2 1.17.17 1.61.1.49-.07 1.53-.62 1.75-1.21.22-.59.22-1.1.15-1.21-.07-.12-.25-.19-.51-.32z"/></svg>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100090681913879&mibextid=LQQJ4d" title="Facebook" target="_blank" rel="noopener noreferrer" aria-label="Riya's Facebook">
+                            <!-- Facebook SVG icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M22.675 0h-21.35C.593 0 0 .593 0 1.325v21.351C0 23.406.593 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.466.099 2.797.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.31h3.59l-.467 3.622h-3.123V24h6.116C23.406 24 24 23.406 24 22.676V1.325C24 .593 23.406 0 22.675 0z"/></svg>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=riyarpatel08@gmail.com" title="Email" aria-label="Email Riya Patel">
+                            <!-- Email SVG icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24" height="24"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.511l-8 5.01-8-5.01V6h16zm0 12H4v-9.839l8 5.011 8-5.011V18z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact">
+        <p><b>Questions or Concerns?</b> Contact us at <a href="mailto:nextupinitiative@gmail.com">nextupinitiative@gmail.com</a></p>
+    </section>
+
+</body>
+</html>
